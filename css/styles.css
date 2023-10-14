@@ -51,20 +51,6 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
 .header-navigation {
   display: flex;
   gap: 76px;
@@ -161,61 +147,6 @@ img {
   background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .solutions {
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/back/back-mobile-2x.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .solutions {
-    max-width: 768px;
-    padding: 112px 0;
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/back/back-tablet.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .solutions {
-      background-image: linear-gradient(to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
-        url(../images/back/back-tablet-2x.jpg);
-    }
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .solutions {
-    max-width: 1440px;
-    padding: 188px 0;
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/back/back-desktop.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .solutions {
-      background-image: linear-gradient(to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
-        url(../images/back/back-desktop-2x.jpg);
-    }
-  }
-}
-
 .main-title {
   color: #ffffff;
   font-size: 36px;
@@ -225,20 +156,6 @@ img {
   text-align: center;
   max-width: 288px;
   margin-bottom: 72px;
-}
-
-@media screen and (min-width: 768px) {
-  .main-title {
-    font-size: 56px;
-    max-width: 496px;
-    margin-bottom: 36px;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .main-title {
-    margin-bottom: 48px;
-  }
 }
 
 .main-button {
@@ -271,12 +188,6 @@ img {
   padding: 96px 0;
 }
 
-@media screen and (min-width: 1158px) {
-  .features {
-    padding: 120px 0;
-  }
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -296,32 +207,7 @@ img {
   gap: 72px;
 }
 
-@media screen and (min-width: 768px) {
-  .features-list {
-    column-gap: 24px;
-    row-gap: 72px;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .features-list {
-    gap: 24px;
-  }
-}
-
 .features-item {}
-
-@media screen and (min-width: 768px) {
-  .features-item {
-    flex-basis: calc((100% - 24px) / 2);
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .features-item {
-    flex-basis: calc((100% - 3 * 24px) / 4);
-  }
-}
 
 .features-icon-container {
   display: none;
@@ -334,20 +220,8 @@ img {
   margin-bottom: 8px;
 }
 
-@media screen and (min-width: 1158px) {
-  .features-icon-container {
-    display: flex;
-  }
-}
-
 .features-icon {
   display: none;
-}
-
-@media screen and (min-width: 1158px) {
-  .features-icon {
-    display: block;
-  }
 }
 
 .features-title {
@@ -360,18 +234,6 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .features-title {
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .features-title {
-    font-size: 20px;
-  }
-}
-
 .features-text {
   font-size: 16px;
   line-height: 1.5;
@@ -379,31 +241,11 @@ img {
   font-weight: 500;
 }
 
-@media screen and (min-width: 1158px) {
-  .features-text {
-    font-weight: 400;
-  }
-}
-
 /* Our-team */
 .our-team {
-  max-width: 320px;
   margin: 0 auto;
   padding: 96px 0;
   background-color: #f4f4fd;
-}
-
-@media screen and (min-width: 768px) {
-  .our-team {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .our-team {
-    max-width: 100%;
-    padding: 120px 0;
-  }
 }
 
 .our-team-title {
@@ -424,19 +266,6 @@ img {
   justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-  .our-team-list {
-    column-gap: 24px;
-    row-gap: 64px;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .our-team-list {
-    gap: 24px;
-  }
-}
-
 .our-team-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -445,11 +274,6 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-/* @media screen and (min-width: 1158px) {
-  .our-team-item {
-    flex-basis: calc((100% - 3 * 24px) / 4);
-  }
-} */
 .employee {
   padding: 32px 0;
 }
@@ -506,14 +330,9 @@ img {
   background-color: #404bbf;
 }
 
+/* Portfolio */
 .portfolio {
   padding: 96px 0;
-}
-
-@media screen and (min-width: 1158px) {
-  .portfolio {
-    padding: 120px 0;
-  }
 }
 
 .portfolio-title {
@@ -533,10 +352,10 @@ img {
   gap: 48px;
 }
 
-/* .portfolio-item {
-  flex-basis: calc((100% - 2 * 24px) / 3);
+.portfolio-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
+
 .portfolio-item:hover,
 .portfolio-item:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -565,6 +384,11 @@ img {
   letter-spacing: 0.02em;
 }
 
+.portfolio-overlay-container {
+  position: relative;
+  overflow: hidden;
+}
+
 .portfolio-overlay-text {
   position: absolute;
   top: 0;
@@ -580,11 +404,6 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-overlay-container {
-  position: relative;
-  overflow: hidden;
-}
-
 .portfolio-item:hover .portfolio-overlay-text,
 .portfolio-item:focus .portfolio-overlay-text {
   transform: translateY(0);
@@ -593,19 +412,23 @@ img {
 /* Footer */
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 98px 0;
 }
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-content {
-  margin-right: 120px;
+  margin-bottom: 72px;
 }
 
 .footer-logo-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -614,12 +437,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  display: inline-block;
-  margin-bottom: 16px;
 }
 
 .logo-accent-foot {
   color: #f4f4fd;
+  display: inline-flex;
 }
 
 .footer-text {
@@ -628,11 +450,10 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
-  margin-left: 0;
 }
 
 .social-text {
+  text-align: center;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -654,15 +475,14 @@ img {
 }
 
 .footer-social {
-  margin-right: 80px;
+  margin-bottom: 72px;
 }
 
-.subs-container {
-  margin-left: auto;
-}
+.subs-container {}
 
 .subs-text {
   margin-bottom: 16px;
+  text-align: center;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -672,18 +492,20 @@ img {
 
 .subs-form {
   display: flex;
-  gap: 24px;
-  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
 }
 
 .subs-input {
-  width: 264px;
+  width: 288px;
   height: 40px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
   border-radius: 4px;
   border: 1px solid #fff;
+  opacity: 0.3;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
   outline: transparent;
@@ -969,4 +791,161 @@ input[type="checkbox"]:checked + .modal-label-checkbox > .check-span {
 .modal-send-button:hover,
 .modal-send-button:focus {
   background-color: #404BBF;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .solutions {
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/back/back-mobile-2x.jpg);
+  }
+}
+
+/* @media screen and (min-width: 768px) */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .solutions {
+    max-width: 768px;
+    padding: 112px 0;
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/back/back-tablet.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .solutions {
+      background-image: linear-gradient(to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/back/back-tablet-2x.jpg);
+    }
+  }
+
+  .main-title {
+    font-size: 56px;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+
+  .features-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .features-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .features-title {
+    text-align: left;
+  }
+
+  .our-team-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .portfolio-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .portfolio-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+/* @media screen and (min-width: 1158px) */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .solutions {
+    max-width: 1440px;
+    padding: 188px 0;
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/back/back-desktop.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .solutions {
+      background-image: linear-gradient(to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/back/back-desktop-2x.jpg);
+    }
+  }
+
+  .main-title {
+    margin-bottom: 48px;
+  }
+
+  .features {
+    padding: 120px 0;
+  }
+
+  .features-list {
+    gap: 24px;
+  }
+
+  .features-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+
+  .features-icon-container {
+    display: flex;
+  }
+
+  .features-icon {
+    display: block;
+  }
+
+  .features-title {
+    font-size: 20px;
+  }
+
+  .features-text {
+    font-weight: 400;
+  }
+
+  .our-team {
+    max-width: 100%;
+    padding: 120px 0;
+  }
+
+  .our-team-list {
+    gap: 24px;
+  }
+
+  .portfolio {
+    padding: 120px 0;
+  }
+
+  .portfolio-list {
+    row-gap: 42px;
+  }
+
+  .portfolio-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+
+  .footer {
+    padding: 102px 0;
+  }
 }
