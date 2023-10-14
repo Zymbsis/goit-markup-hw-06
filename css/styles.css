@@ -6,6 +6,7 @@ body {
 
 a {
   text-decoration: none;
+  font-style: normal;
 }
 
 li {
@@ -42,6 +43,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  position: absolute;
 }
 
 .container {
@@ -114,7 +116,6 @@ img {
 }
 
 .address-list {
-  font-style: normal;
   display: none;
   gap: 40px;
 }
@@ -136,17 +137,70 @@ img {
 .header-menu-button {
   width: 24px;
   height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
 
-.header-menu-svg {
-  /* width: 100%;
-  height: 100%; */
+/* ? Mob-menu */
+.mob-menu {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 72px 24px 40px 16px;
+  background-color:
+    #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mob-menu > .modal-button-close {
+  background-color: transparent;
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mob-menu-item {
+  color: #2E2F42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+
+.mob-menu-item:first-child .mob-menu-item-text {
+  color: #404BBF;
+}
+
+.mob-menu-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.mob-menu-address-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mob-menu-link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em
+}
+
+.mob-menu-address-item:last-child .mob-menu-link {
+  color: #434455;
+}
+
+.mob-menu-social-list {
+  display: flex;
+  gap: 40px;
 }
 
 .solutions {
@@ -749,7 +803,6 @@ textarea::placeholder {
 
 .check-label-span {
   color: #4D5AE5;
-  font-style: normal;
   line-height: 1.33;
   text-decoration-line: underline;
 }
