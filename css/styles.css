@@ -31,6 +31,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .header {
@@ -966,7 +967,7 @@ input[type="checkbox"]:checked + .modal-label-checkbox > .check-span {
   }
 
   .footer-container {
-    padding-left: 108px;
+    width: 550px;
     column-gap: 24px;
     justify-content: left;
   }
@@ -1095,6 +1096,10 @@ input[type="checkbox"]:checked + .modal-label-checkbox > .check-span {
 
   .footer {
     padding: 102px 0;
+  }
+
+  .footer-container {
+    width: 100%;
   }
 
   .footer-content {
