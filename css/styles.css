@@ -20,7 +20,7 @@ h4,
 h5,
 h6,
 p {
-  margin: 0 auto;
+  margin: 0;
 }
 
 ul {
@@ -43,7 +43,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  position: absolute;
 }
 
 .container {
@@ -155,6 +154,10 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .mob-menu > .modal-button-close {
@@ -188,6 +191,7 @@ img {
 }
 
 .mob-menu-link {
+  color: #4D5AE5;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -654,12 +658,12 @@ input::placeholder {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   padding-top: 72px;
-  padding-right: 24px;
+  padding-right: 16px;
   padding-bottom: 24px;
-  padding-left: 24px;
+  padding-left: 16px;
   background-color: #FCFCFC;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -794,11 +798,13 @@ textarea::placeholder {
 }
 
 .modal-label-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  ;
 }
 
 .check-label-span {
@@ -809,11 +815,11 @@ textarea::placeholder {
 
 .check-span {
   display: inline-flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 16px;
   height: 16px;
-  margin-right: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   fill: transparent;
@@ -875,6 +881,32 @@ input[type="checkbox"]:checked + .modal-label-checkbox > .check-span {
 
 /* @media screen and (min-width: 768px) */
 @media screen and (min-width: 768px) {
+  .header-navigation {
+    gap: 120px;
+  }
+
+  .header-logo-link {
+    padding: 26px 0;
+  }
+
+  .header-list {
+    display: flex;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .address-link {
+    padding: 0;
+  }
+
+  .header-menu-button {
+    display: none;
+  }
+
   .container {
     max-width: 768px;
   }
@@ -960,6 +992,13 @@ input[type="checkbox"]:checked + .modal-label-checkbox > .check-span {
 
   .subs-input {
     width: 264px;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding-right: 25px;
+    padding-left: 23px;
   }
 }
 
@@ -1054,5 +1093,10 @@ input[type="checkbox"]:checked + .modal-label-checkbox > .check-span {
 
   .subs-container {
     margin-left: auto;
+  }
+
+  .modal {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
