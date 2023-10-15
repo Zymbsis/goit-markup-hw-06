@@ -229,6 +229,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   max-width: 288px;
+  margin: 0 auto;
   margin-bottom: 72px;
 }
 
@@ -1004,6 +1005,15 @@ input[type="checkbox"]:checked + .modal-label-checkbox > .check-span {
 
 /* @media screen and (min-width: 1158px) */
 @media screen and (min-width: 1158px) {
+  .address-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .address-link {
+    padding: 24px 0;
+  }
+
   .container {
     max-width: 1158px;
     padding-left: 15px;
