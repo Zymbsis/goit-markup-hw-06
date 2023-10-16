@@ -883,7 +883,6 @@ input[type="checkbox"]:checked + .modal-label-checkbox > .check-span {
 
   .address-content {
     display: block;
-    margin-left: auto;
   }
 
   .address-list {
